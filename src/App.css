@@ -101,13 +101,14 @@ h1 {
 
 .App-div {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .sec-1 {
   background-color: orange;
+  background-image: url(../src/1.png);
   height: 100vh;
-  width: 1000px;
+  width: 12130px;
   border-right: 10px solid blue;
   display: block;
 }
