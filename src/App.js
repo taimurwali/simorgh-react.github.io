@@ -1,24 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
+import HorizontalScroll from 'react-scroll-horizontal'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App-div">
+      <HorizontalScroll>
+          <div  className="sec-1">asda</div>
+          <div   className="sec-2"> 123123</div>
+          <div   className="sec-3"> @!#!@#</div>
+      </HorizontalScroll>
     </div>
   );
 }
