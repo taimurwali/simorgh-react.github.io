@@ -2,7 +2,10 @@ import React from 'react';
 import HorizontalScroll from 'react-scroll-horizontal';
 
 import './App.css';
-import Test from './Main';
+import Hero from './hero';
+import Services from './Services';
+import Life from './life';
+import Team from './team';
 
 
 
@@ -10,12 +13,11 @@ import Test from './Main';
 function App() {
   return (
       <div className="App-div">
-      <Test firstName="Simorgh" lastName="SPS" /> 
-
       <HorizontalScroll reverseScroll = {true} config = {{ stiffness: 42, damping: 19 }} animValues    = { 40075 / 360 }>
-          <div  className="sec-1">asda</div>
-          <div   className="sec-2"> 123123</div>
-          <div   className="sec-3"> @!#!@#</div>
+      <Hero></Hero> 
+      <Services></Services>
+      <Life></Life>
+      <Team></Team>
       </HorizontalScroll>
     </div>
 
