@@ -17,14 +17,15 @@
    * Styles
    */
   body {
-    background: url("../src/newbg.gif") center center no-repeat;
+    background: url("../src/newbg.svg") center center no-repeat;
     background-size: cover;
     font-family: "Source Sans Pro", sans-serif;
+    font-size: 13px;
   }
   
   .o-main {
     height: 100vh;
-    width: 80vw;
+    width: 60vw;
   }
   
   /**
@@ -322,4 +323,12 @@
     border-right:1px solid #555; 
     border-bottom:none; 
     padding-right:10px;
+  }
+
+
+
+
+
+  .logo-size {
+    height: 80px;
   }

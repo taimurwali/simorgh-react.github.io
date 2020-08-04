@@ -6,6 +6,7 @@ import Hero from './hero';
 import Services from './Services';
 import Life from './life';
 import Team from './team';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
