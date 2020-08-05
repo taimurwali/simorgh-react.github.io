@@ -5,8 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './hero.css';
 import $ from 'jquery';
-import {TweenMax, TimelineMax } from 'gsap'
-import {ScrollMagic } from 'scrollmagic'
+import TweenMax from 'gsap'
 
 
 
@@ -16,63 +15,6 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-
-// Init ScrollMagic
-var controller = new ScrollMagic.Controller();
-
-// GSAP Timline vars
-var horzTl = new TimelineMax();
-var processTl = new TimelineMax();
-
-// ScrollMagic scenes
-// horizontal scrolling scene
-var horzScene = new ScrollMagic.Scene({
-	triggerElement: '#process',
-	triggerHook: 0,
-	duration: '300%'
-})
-.setTween(horzTl)
-.setPin('#process')
-.addTo(controller);
-
-// process scene
-var processScene = new ScrollMagic.Scene({
-	triggerElement: '#process',
-	triggerHook: 0,
-	duration: '300%'
-})
-.setTween(processTl)
-.addTo(controller);
-
-// Set timeline objects
-horzTl
-  //side scrolling
-  .to('.horizontal-container', .2, {x: '-66.6666%', ease:Linear.easeNone})
-;
-
-processTl
-  // steps
-  .from('.step-01', .02, {autoAlpha:0}) 
-  .add('line')
-  .to('.time', 3, {strokeDashoffset:0, ease:Linear.easeNone}, 'line')  
-	.from('.step-02', .02, {autoAlpha:0}, 'line+=.15')
-	.from('.step-03', .02, {autoAlpha:0}, 'line+=.6')
-	.from('.step-04', .02, {autoAlpha:0}, 'line+=1.07')
-	.from('.step-05', .02, {autoAlpha:0}, 'line+=1.5')
-	.from('.step-06', .02, {autoAlpha:0}, 'line+=1.75')
-	.from('.step-07', .02, {autoAlpha:0}, 'line+=2.33')
-	.from('.step-08', .02, {autoAlpha:0}, 'line+=2.75')
-	.from('.step-09', .02, {autoAlpha:0, onComplete: function() {
-    // destroy timelines
-    horzScene.destroy();
-    processScene.destroy();
-    // remove added styles
-    TweenMax.set(".scrollmagic-pin-spacer", {clearProps: "all"});
-    //keep window in place
-    scroll(0, innerHeight);
-  }})
-;
 
 
 var cursor = $(".cursor"),
