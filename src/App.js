@@ -11,9 +11,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
+
 function App() {
   return (
       <div className="App-div">
+            <div className="cursor"></div>
+<div className="cursor-follower"></div>
       <HorizontalScroll reverseScroll = {true} config = {{ stiffness: 42, damping: 19 }} animValues    = { 40075 / 360 }>
       <Hero></Hero> 
       <Services></Services>
@@ -24,5 +27,7 @@ function App() {
 
   );
 }
+
+
 
 export default App;

@@ -1,3 +1,8 @@
+.h3, h3 {
+  font-size: 1.75rem;
+  font-family: fantasy;
+}
+
 .App {
   text-align: center;
 }
@@ -164,4 +169,87 @@ h1 {
 .sec-3 {
   clip-path: polygon(3% 0, 100% 0, 100% 100%, 0% 100%);
   padding: 20px 20px 9px 51px;
+  position: relative;
+  padding: 90px !important;
+}
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#intro,
+#bloop {
+  background: #666;
+  height: 100vh;
+}
+#intro .wrap,
+#bloop .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#process-wrap.nopad .scrollmagic-pin-spacer {
+  padding: 0 !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+#process {
+  background: blue;
+  background-size: 100% auto;
+  position: relative;
+  height: 100vh;
+  width: 300%;
+}
+#process .wrap {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.time {
+  fill: none;
+  stroke: #f04931;
+  stroke-dasharray: 4700;
+  stroke-dashoffset: 4700;
+}
+
+.step {
+  fill: #01bbea;
+  font-size: 50px;
+  font-family: CircularStd-Bold, Circular Std;
+  font-weight: 700;
+  text-align: center;
+}
+
+.line {
+  fill: #f04931;
+  stroke: #01bbea;
+  stroke-width: 4px;
+  stroke-miterlimit: 10;
+}
+
+.dot {
+  fill: #01bbea;
+  visibility: hidden;
+}
+
+.horz {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0%;
+  bottom: 0;
 }
