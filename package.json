@@ -19,8 +19,10 @@
     "react-motion": "^0.5.2",
     "react-scripts": "3.4.1",
     "react-scroll-horizontal": "^1.6.4",
+    "redux": "^4.0.5",
     "scrollmagic": "^2.0.7",
-    "use-lax": "^3.2.0"
+    "use-lax": "^3.2.0",
+    "video-react": "^0.14.1"
   },
   "scripts": {
     "start": "react-scripts start",
