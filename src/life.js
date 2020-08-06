@@ -26,7 +26,6 @@ function Life() {
     </Player>
         </div>
 
-        <div class="quote-block" ><div class="count"><span>5</span>/5</div><span class="headline">Be selfless</span><div class="quote-icon"><div class="text">“</div></div><blockquote class="underline-child quote quote--default"><p class="quote__text ">We recruit and promote people who want to win as <i>part of a great </i><u><i>company</i></u>.</p></blockquote></div>
         <div className="inline v2">
           <Player
       controls= {false}
